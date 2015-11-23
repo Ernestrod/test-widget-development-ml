@@ -37,7 +37,9 @@
   //carrusel principal
 
   #CarruselMain{
-
+    .ch-carousel-item {
+      height: auto !important;
+    }
     .ch-carousel-mask{
 
       margin: 0;
@@ -70,7 +72,8 @@
 
   #Carrusel{
     .ch-carousel-item{
-
+      height:auto!important;
+      min-width: 100px;
       img{width: 100%; height: auto;}
       //a{ display: block}
 
@@ -101,7 +104,7 @@
     label{
       position: absolute;
       top:0;
-
+      cursor:pointer;
     }
     .tab:nth-child(1){
       label{left:5px;}
