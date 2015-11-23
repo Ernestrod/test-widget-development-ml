@@ -11,19 +11,18 @@
     console.log(carrucel, CarruselMain);
   });
 
-  $('.ch-form-actions input').on('click',function(e){
+  $('.ch-form-actions input').on('click', function(e){
     e.preventDefault();
-    var pressed = e.target.getAttribute("aria-pressed") == "true";
-    event.target.setAttribute("aria-pressed", pressed ? "false" : "true");
+    var pressed = e.target.getAttribute('aria-pressed') === 'true';
+    event.target.setAttribute('aria-pressed', pressed ? 'false' : 'true');
 
   });
 
   //tabs aria
-  var $tabs =  $('.tabs-container label')
-    $tabs.on('click',function(e){
-      $tabs.attr("aria-selected",false)
-    //change the aria-pressed value as the button is toggled:
-      $(this).attr("aria-selected",true)
+  var $tabs = $('.tabs-container label');
+    $tabs.on('click', function(){
+      $tabs.attr('aria-selected', false);
+      $(this).attr('aria-selected', true);
 
   });
 
