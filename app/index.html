@@ -15,9 +15,8 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-
-    <link rel="stylesheet" href="/bower_components/chico/dist/ui/chico.css">
     <link rel="stylesheet" href="styles/mesh.css">
+    <link rel="stylesheet" href="/bower_components/chico/dist/ui/chico.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
@@ -41,8 +40,8 @@
           <div class="ch-centercolumn ch-box-lite">
             <div id="CarruselMain">
               <ul>
-                <li><img class="responsive" src="http://placehold.it/600x600"></li>
-                <li><img class="responsive" src="http://placehold.it/600x600"></li>
+                <li><img class="responsive" src="http://placehold.it/600x650"></li>
+                <li><img class="responsive" src="http://placehold.it/600x650"></li>
               </ul>
             </div>
          </div>
@@ -103,48 +102,48 @@
           </div>
         </div>
         <div class="ch-g1">
-          <div class="YOUR_SELECTOR_Tabs ch-tabs">
-            <ul role="tablist" class="ch-tabs-triggers">
-              <li>
-                <a role="tab" aria-controls="tab1-a" href="#tab1-a" class="ch-tab ch-user-no-select ch-expandable-trigger-on">
-                  Product Description
-                </a>
-              </li>
-              <li>
-                <a role="tab" aria-controls="tab2-a" href="#tab2-a" class="ch-tab ch-user-no-select">
-                  Comments
-                </a>
-              </li>
-              <li>
-            </ul>
-            <div role="presentation" class="ch-box-lite ch-tabs-panel">
-              <div aria-hidden="false" role="tabpanel" aria-expanded="true" class="ch-tabpanel" id="tab1-a">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet purus in sapien luctus sodales. Curabitur dui velit, cursus in sagittis aliquam, dictum at neque. Ut gravida scelerisque lorem non pulvinar. Pellentesque et urna vitae nisl porta imperdiet sed nec ipsum. Sed non sem velit. Cras id consectetur tellus.</p>
-              </div>
-              <div role="tabpanel" aria-expanded="false" id="tab2-a" class="ch-hide ch-tabpanel">
-                <p>Vestibulum posuere purus non enim pharetra vel vulputate eros hendrerit. Ut pulvinar placerat risus quis interdum. Mauris eget tempus risus. Aenean accumsan dolor in lorem elementum ac tincidunt urna rutrum. Sed sit amet nunc velit, vitae tincidunt ipsum. Fusce mattis elementum justo, et lacinia odio pharetra a.</p>
+          <div class="tabs-container">
+            <div class="tab">
+              <input type="radio" id="tab-1" name="tab-group-1" checked>
+              <label for="tab-1" class="ch-tab">Product Description</label>
+              <div class="conten ch-box-lite ch-tabs-panel">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing.  Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing.
               </div>
             </div>
+            <div class="tab">
+                <input type="radio" id="tab-2" name="tab-group-1"/>
+                <label for="tab-2" class="ch-tab">Comments</label>
+                  <div class="conten ch-box-lite ch-tabs-panel">
+                    <div class="comment">
+                      <h3>Client</h3>
+                      <div class="ch-box-info"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing.</p></div>
+                    </div>
+                    <div class="comment">
+                      <h3>Seller</h3>
+                      <div class="ch-box-ok"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit adipiscing. Donec sit amet purus in sapien luctus sodales adipiscing.</p></div>
+                    </div>
+                  </div>
+             </div>
           </div>
-        </div>
+         </div>
       </section>
       </div>
     </main>
   </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/tiny.js/dist/tiny.js"></script>
-    <script src="/bower_components/chico/dist/ui/chico.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/plugins.js -->
+  <!-- build:js scripts/plugins.js -->
 
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+  <!-- build:js scripts/main.js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/tiny.js/dist/tiny.js"></script>
+  <script src="/bower_components/chico/dist/ui/chico.js"></script>
+  <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
 </html>

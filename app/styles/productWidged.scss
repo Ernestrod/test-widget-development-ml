@@ -3,6 +3,7 @@
 
     font-size: 64px;
     padding-left:30px;
+    margin-bottom:20px;
 
   }
 
@@ -66,6 +67,7 @@
 
   }
   //carrusel productos similares
+
   #Carrusel{
     .ch-carousel-item{
 
@@ -90,4 +92,33 @@
       }
 
     }
+  }
+
+  //tabs
+  .tabs-container{
+    position: relative;
+    padding-top: 27px;
+    label{
+      position: absolute;
+      top:0;
+
+    }
+    .tab:nth-child(1){
+      label{left:5px;}
+    }
+    .tab:nth-child(2){
+
+      label{left:148px;}
+
+    }
+    .tab input[type=radio], .tab .conten {
+      display: none;
+    }
+    input[type=radio]:checked ~ label{
+        height: 21px;
+        border-bottom: none;
+       & ~ .conten {
+          display: block;
+        }
+      }
   }

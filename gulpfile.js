@@ -69,14 +69,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('fonts', function() {
-  return gulp.src(require('main-bower-files')({
-    filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/fonts/**/*'))
-    .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/fonts'));
-});
+gulp.task('icons', function () {
+  return gulp.src('./bower_components/chico/dist/assets/**/*')
+    .pipe(gulp.dest('.tmp/assets'))
+    .pipe(gulp.dest('dist/assets'));
 
+});
 gulp.task('extras', function() {
   return gulp.src([
     'app/*.*',
@@ -88,7 +86,7 @@ gulp.task('extras', function() {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts'],function() {
+gulp.task('serve', ['styles', 'icons'],function() {
   browserSync({
     notify: false,
     port: 9000,
@@ -155,7 +153,7 @@ gulp.task('wiredep', function() {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], function() {
+gulp.task('build', ['lint', 'html', 'images', 'icons', 'extras'], function() {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
