@@ -26,4 +26,7 @@
 
   });
 
+  //work arround carrucel
+  $(window).trigger('resize');
+
 })(jQuery);
