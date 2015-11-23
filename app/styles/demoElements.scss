@@ -1,0 +1,14 @@
+
+
+header#header{
+  height: 60px;
+  background: $mc-yelow;
+  @include bottomBorder;
+}
+
+.overlord{
+
+  max-width: 1160px;
+  margin: 0 auto;
+
+}

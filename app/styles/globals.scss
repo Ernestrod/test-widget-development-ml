@@ -1,0 +1,18 @@
+  body{
+    padding: 0;
+    background: $mc-grayLighter;
+  }
+
+  img.responsive {
+
+    width: 100%;
+    height: auto;
+
+  }
+
+  @mixin bottomBorder(){
+
+    border-bottom:1px solid $mc-graylight;
+
+
+  }

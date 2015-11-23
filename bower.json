@@ -1,0 +1,24 @@
+{
+  "name": "test-widget-development-ml",
+  "description": "Este es un test de desarrollo front-end de un widget tipo producto.",
+  "main": "index.js",
+  "authors": [
+    "Ernesto Rodriguez"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Ernestrod/test-widget-development-ml",
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.4.2",
+    "mocha": "~2.3.4",
+    "chico": "~2.0.0"
+  }
+}
